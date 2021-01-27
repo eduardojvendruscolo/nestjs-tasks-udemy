@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  postgre:
+    image: 'postgres'
+    volumes:
+      - postgre.volume
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5462:5432
+
+volumes:
+  postgre.volume:
